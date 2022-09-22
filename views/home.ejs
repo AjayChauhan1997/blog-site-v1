@@ -1,0 +1,37 @@
+<%- include("header.ejs") -%>
+
+
+<h1><%= tittle %></h1>
+<p><%= homecontent %></p>
+    
+
+
+<% postshere.forEach(function(e){ %>
+
+
+
+    <div class="divcolor col-sm-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">
+                    <%= e.tittle %>
+                </h3>
+                <p class="card-text">
+                    <%= e.post.substring(0,100)  +" ..." %> 
+                </p>
+                <a href="/post/<%= e.tittle %>" >read more</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+<% }); %>
+
+
+
+    
+<%- include("footer.ejs") -%>
+  
+   

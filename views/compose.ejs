@@ -1,0 +1,24 @@
+<%- include("header.ejs") -%>
+
+
+<h1><%= tittle %></h1>
+<form action="/" method="post">
+    
+  
+
+      <div class="form-floating"><label for="floatingTextarea">Tittle</label>
+        <textarea class="form-control" name="composetittle"  placeholder="Give a tittle" id="floatingTextarea"></textarea>
+        
+      </div> 
+
+      <div class="form-floating"><label for="floatingTextarea2">Post</label>
+        <textarea name="composepost" class="form-control" placeholder="Leave a post here" id="floatingTextarea2" style="height: 100px"></textarea>
+        
+      </div>  
+    <button type="submit" class="btn btn-primary">Publish</button>
+    </form>
+    
+    
+    
+<%- include("footer.ejs") -%>
+
